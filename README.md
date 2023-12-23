@@ -16,10 +16,10 @@ Loads the pre-trained model to predict the class of the uploaded plant leaf imag
 Displays the prediction result and the processed image on the web page.
 
 # Dataset Link
-Link: 
+Link: https://drive.google.com/drive/folders/1Egflem6hT2NpZA2pKyOokxxZIhwuXCfU?usp=sharing
 
 # Model Link(.h5)
-
+https://drive.google.com/file/d/1GZC3cGyJsf2l6lOW2eRk2a1ithpF2Rc5/view?usp=sharing
 
 As the Model and Dataset are too big, I have provided the link for them.
 # Web Templates (templates/):
