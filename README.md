@@ -15,6 +15,13 @@ Implements a Flask web application for user-friendly interaction.
 Loads the pre-trained model to predict the class of the uploaded plant leaf image.
 Displays the prediction result and the processed image on the web page.
 
+# Dataset Link
+Link: 
+
+# Model Link(.h5)
+
+
+As the Model and Dataset are too big, I have provided the link for them.
 # Web Templates (templates/):
 
 Contains HTML templates for the web application.
