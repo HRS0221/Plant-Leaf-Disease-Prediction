@@ -21,7 +21,6 @@ Contains HTML templates for the web application.
 # Static Files (static/):
 Includes a folder for uploading and storing user images.
 
-# Instructions
 # Install Dependencies:
 Install the required Python libraries using the following command:
 
