@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <link rel="stylesheet" href="static/css/main.css"> -->
+
+<style>
+    /* body  {
+        background-image: url({{url_for('static', filename='static/back1.jpg') }});
+  } */
+  
+  * {
+              margin: 0px;
+              padding: 0px;
+              box-sizing: border-box;
+  
+  
+          }
+  
+          form {
+              display: flex;
+              height: 85vh;
+              justify-content: center;
+              align-items: center;
+              margin-top: -150px;
+              width: 60%;
+              text-align: center;
+              margin-left:300px;
+              
+          }
+  
+          .details h2 {
+              
+              position: relative;
+              top: 100px;
+              margin: auto;
+              color: rgb(18, 231, 231);
+              font-size: 3rem;
+          }
+  
+          label:hover {
+              transform: scale(1.03);
+          }
+  
+          .details h2 {
+          
+              position: relative;
+              top: 100px;
+              margin: auto;
+              color: rgb(18, 231, 231);
+              font-size: 3rem;
+  
+          }
+  
+          .details h1 {
+              color: white;
+              padding: 20px;
+              border-radius: 15px;
+              background-color: rgb(8, 8, 8);
+          }
+  
+          .upload {
+  
+              font-size: 20px;
+              background-color: rgb(255, 252, 252);
+              border-radius: 20px;
+              outline: none;
+              width: 500px;
+              color: rgb(0, 0, 0);
+              border: 3px solid rgb(45, 47, 49);
+  
+          }
+  
+          ::-webkit-file-upload-button {
+              /* position: absolute; */
+              font-family: var(--font-primary);
+              font-weight: 500;
+              font-size: 20px;
+              letter-spacing: 1px;
+              display: inline-block;
+              padding: 20px;
+              border-radius: 50px;
+              transition: 0.01s;
+              background-color: rgb(158, 206, 207);
+              color: rgb(0, 0, 0);
+              border: 2px solid var(--color-primary);
+  
+          }
+  
+          ::-webkit-file-upload-button:hover {
+              border-radius: 20px;
+              border: 2px solid rgb(177, 174, 174);
+  
+          }
+
+         
+
+
+
+  
+          .submitb {
+              position: absolute;
+              font-family: var(--font-primary);
+              font-weight: 500;
+              font-size: 25px;
+              letter-spacing: 2px;
+              display: inline-block;
+              padding: 15px 35px;
+              border-radius: 50px;
+              transition: 0.3s;
+              margin-top: 200px;
+              background-color: rgb(158, 206, 207);
+              color: rgb(0, 0, 0);
+              border: 2px solid black;
+          }
+
+
+          .submitb:hover{
+            background-color: #4CAF50; 
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+          }
+</style>
+</head>
+
+<body style="background-color: aqua;">
+    
+	 
+    <div style="margin-top: 3em;">
+        <h1 style="text-align:center;font-size :3em;font-family: aRIAL;">PLANT DISEASE DETECTION AND FERTILIZER SUGGESTION</h1>
+    </div>    
+<section class="uploadclass">
+                 
+            <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+
+                <input type="file" name="image" class="upload">
+				<br>
+				<br>
+                <input type="submit" class="submitb" value="Predict">
+
+            </form>
+      
+    </section>
+
+
+</body>
+</html>
